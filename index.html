@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gibson Index by beryllium</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Gibson Index</h1>
+        <p>A ranking system for the relative severity of Cyber Attacks.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/beryllium/Gibson-Index" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/beryllium/Gibson-Index/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/beryllium/Gibson-Index/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>Gibson Index</h1>
+
+<ul>
+<li>Version: 0.1</li>
+<li>Author: Kevin Boyd (aka Beryllium)</li>
+</ul><p>The Gibson Index is a ranking system for the relative severity of Cyber Attacks.</p>
+
+<p>Media reports and political discussions surrounding computer security lack a simple structured context for communicating this information. This can result in simple concepts becoming muddled and intimidating.</p>
+
+<p>There have also been cases where blame was not placed on the proper party. Often, the people discussing security events make analogies to "leaving the door open" and mistakenly portray certain types of events as common break-and-enter. This ranking system highlights that there can't be a break-and-enter when the house was built without walls. And, sometimes, your neighbour might come along and notice your door is open - they might poke their head in to see if anyone's home, and they might close the door behind them as they leave. They might even check again a few days later, to make sure you've been keeping on your toes. In this analogy, it's a favour - and an early warning to quickly harden your security to prevent more severe incidents.</p>
+
+<p>The Gibson Index ranges from 0 to 7, with 7 being the most severe class of attack (resulting in multiple intentional deaths and/or egregious financial/economic damage).</p>
+
+<h1>Overview</h1>
+
+<h2>Gibson Level Zero</h2>
+
+<p>A level zero event is one that causes little or no disruption/damage, or is the result of a mitigating circumstance.</p>
+
+<p>It is important to note that Gibson Level Zero events are not true cyber attacks. Advanced networking/testing tools may be the source of the events, but often the controller behind the tools is just an average person who has a curious mind - and no malicious intent.</p>
+
+<p>In fact, Level Zero events are a great learning experience for system administrators. If a level zero event causes an issue on a network, it shows that the design of the network may need to be improved.</p>
+
+<p><strong>Example Level Zero events:</strong></p>
+
+<ul>
+<li>Port scanning</li>
+<li>Pinging (including flood mode)</li>
+<li>Limited probing of available ports, especially within protocol specification (e.g., weev and At&amp;t, incrementing a variable in a GET/POST)</li>
+<li>Some types of vulnerability scanning (e.g., Dawson College/Ahmed Al-Khabaz incident, highlighting security concerns and re-checking to see if they have been fixed promptly)</li>
+<li>Inadvertently triggering a failure condition due to a bug in the code</li>
+<li>Random person plugging both ends of a network cable into the wall (if you do this more than once, you're a jerk)</li>
+</ul><h2>Gibson Level One</h2>
+
+<p>A level one event is one that has some small real-world consequences, but can often have non-malicious explanations. Some groups have suggested that DDoS events are a form of protest, rather than a true attack. However, since bandwidth has a cost, some DDoS events are more attack-like than others.</p>
+
+<p><strong>Example Level One Events:</strong></p>
+
+<ul>
+<li>Distributed Denial of Service Attack (short-term, low relative throughput, but usually intentional)</li>
+<li>Distributed/Mid-Throughput Vulnerability Probing</li>
+<li>Accidental data leaks (if a vendor screws up and essentially leaves customer data world-readable, it is not the fault of the readers - but what the reader and the vendor do to exploit or fix things, respectively, can escalate the event to Level One or higher)</li>
+<li>Certain intentional data leaks (PACER, JSTOR, Aaron Swartz)</li>
+</ul><h2>Gibson Level Two</h2>
+
+<p>Level Two attacks have a clear malicious intent and can result in longer outages, more significant privacy issues, and generally more damage than Level One events.</p>
+
+<p>If several Level One events are coordinated, they can be described as a Level Two attack under certain circumstances.</p>
+
+<p><strong>Example Level Two Attacks:</strong></p>
+
+<ul>
+<li>Large-Scale Distributed Denial of Service attacks with high throughput and resulting costs</li>
+<li>Key logging, Man-in-the-Middle attacks, SQL Injection (these are often signs of a clear malicious intent)</li>
+</ul><h2>Gibson Level Three</h2>
+
+<p>Minor financial damages and moderate privacy implications, generally stemming from a partial penetration of systems. </p>
+
+<p><strong>Example Level Three Attacks:</strong></p>
+
+<ul>
+<li>Espionage. This can be anything from credit card skimming at a single business, to an internal corporate forum being hacked to gather business intelligence.</li>
+<li>Site defacement. Associated downtime &amp; rebuilding systems has a cost.</li>
+<li>Botnet participation. A malware infection in a business can cause downtime (and attention should be paid to ensure it isn't part of a higher-level event)</li>
+</ul><h2>Gibson Level Four</h2>
+
+<p>Major financial damages or privacy implications. Well-defended systems breached by vulnerability. </p>
+
+<p><strong>Example Level Four Attacks:</strong></p>
+
+<ul>
+<li>High-Value Espionage. </li>
+<li>Sabotage. </li>
+<li>New York Times, Washington Post, Twitter penetrations of Jan 2013. </li>
+<li>Operation Shady RAT. <a href="http://en.wikipedia.org/wiki/Operation_Shady_RAT">http://en.wikipedia.org/wiki/Operation_Shady_RAT</a>
+</li>
+</ul><h2>Gibson Level Five</h2>
+
+<p>Systematic, coordinated, broad penetration of a multitude of networks, likely perpetrated by a large team or nation-state.  </p>
+
+<p><strong>Example Level Five Attacks:</strong></p>
+
+<ul>
+<li>Red October. <a href="http://arstechnica.com/security/2013/01/massive-espionage-malware-relied-on-java-exploit-to-infect-pcs/">http://arstechnica.com/security/2013/01/massive-espionage-malware-relied-on-java-exploit-to-infect-pcs/</a>
+</li>
+</ul><h2>Gibson Level Six</h2>
+
+<p>Level Six threats remain mostly theoretical. They consist of attacks that manifest themselves in real-world, targetted, intentional damage. </p>
+
+<p>The closest known example to such an attack is the Stuxnet virus, which was thought to be carefully built to target a very specific piece of lab equipment in an unknown lab (suspected to be used for enrichment of nuclear materials in Iran). Stuxnet cast a very wide net, with only a single small target in mind. Future Level Six attacks could have an array of targets in mind, but with localized effects.</p>
+
+<h2>Gibson Level Seven</h2>
+
+<p>A Level Seven attack would result in mass casualties from intentional, targeted efforts. This is mostly in the realm of SciFi at the moment, but if careful watch is not kept, a Level Seven attack could be unimaginably catastrophic.</p>
+
+<p>One well-known SciFi example: Skynet.</p>
+
+<h1>Inspiration and Call to Action</h1>
+
+<p>This document is just a basic overview, a first draft. It needs improvement through better examples and a refinement of the categories. <em>If you find inconsistencies or have input, please submit an issue or fork and submit a PR.</em></p>
+
+<p>The inspiration for this document is the desire to counteract perceived persecution and vilification of people who have done little or nothing wrong - they are being foisted to the level of Hacker-Pariahs, but they have done nothing to warrant such persecution. The firestorms surrounding Aaron Swartz, Ahmed Al-Khabaz, and Andrew "weev" Auernheimer are just a few examples of disproportionate responses to Gibson Level Zero or Level One events.</p>
+
+<p>The media needs a guide to what constitutes a clear and present danger - this is that guide.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/beryllium">beryllium</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-26177718-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
