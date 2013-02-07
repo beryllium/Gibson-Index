@@ -11,6 +11,9 @@ Gibson Level Two
 Gibson Level One
 ----------------
 
+Gibson Level Zero
+----------------
+
 2013-02-06: Steam HTML data leakage of user profile information. Ranked as **Gibson Level Zero**, due to prompt response and respectful reporting of the issue.
 
   * Ars Technica: [HTML holes exposed sensitive data for “private” Steam user accounts](http://arstechnica.com/security/2013/02/html-holes-exposed-sensitive-data-for-private-steam-user-accounts/)
