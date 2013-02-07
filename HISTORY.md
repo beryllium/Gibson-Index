@@ -12,7 +12,7 @@ Gibson Level One
 ----------------
 
 Gibson Level Zero
-----------------
+-----------------
 
 2013-02-06: Steam HTML data leakage of user profile information. Ranked as **Gibson Level Zero**, due to prompt response and respectful reporting of the issue.
 
